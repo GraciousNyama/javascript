@@ -1,11 +1,6 @@
-var cars= ["BMW", "BENZ", "AUDI","VW", "RUF"];
+var days= ["Monday", "Tuesday", "Wednesday"];
 
-var i =0;
-var text= "<ul>";
-cars.pop()
-do{text += "<li>" +cars[i]+"</li>" ;
-  i++;
-}while (i<cars.length)
-text += "</ul>";
-
-document.getElementById("demo").innerHTML=text;
+if(days[0] == "Monday"){document.write("Hey i found Monday");
+}else{
+  document.write("Bummer man, no Monday here");
+}
