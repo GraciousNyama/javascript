@@ -3,3 +3,9 @@ $(document).ready(function(){
     $("#panel").slideDown("slow");
   });
 });
+
+$(document).ready(function(){
+  $(".demo").click(function(){
+    $("#panel").slideUp();
+  });
+});
