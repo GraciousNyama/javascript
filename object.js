@@ -14,9 +14,36 @@ var rangeRover={
   yearofRelease:2010
 };
 var cars=[corolla, rangeRover];
-for(i=0; i<cars.length; i++){
-  document.write(
-    "this is a " + cars[i].brand + " car called a" + cars[i].make +
-    "!<br> it is a" + cars[i].type + " which is" + cars[i].color +
-    " and was released in" + cars[i].yearofRelease + "<br/><br/>");
-  }
+var pickUp={
+  brand:"Nissan",
+  make:"Hard body",
+  type:"Pick Up Truck",
+  color:"Grey",
+  yearofRelease:2003
+}
+cars.unshift(pickUp);
+var i=0;
+  do{
+    document.write("this is a " + cars[i].brand + " car called a" + cars[i].make +
+  "!<br> it is a" + cars[i].type + " which is" + cars[i].color +
+  " and was released in" + cars[i].yearofRelease + "<br/><br/>");
+  i++;
+}
+
+  while(i<cars.length);
+  $(document).ready(function(){
+    $(".memo").click(function(){
+      $("*").hide();
+    });
+  });
+
+  $(document).ready(function(){
+    $(".demo").click(function(){
+      $("*").fadeOut(5000);
+    });
+  });
+  $(document).ready(function(){
+    $(".mogo").click(function(){
+      $("*").show();
+    });
+  });
