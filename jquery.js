@@ -15,3 +15,7 @@ $(document).ready(function(){
     $("#panel").stop();
   });
 });
+
+window.alert("Hi, am alert")
+$("#panel").css("background-color", "#cccccc");
+$("#panel").text("click me and see");
