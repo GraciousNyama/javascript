@@ -47,3 +47,17 @@ var i=0;
       $("*").show();
     });
   });
+  $(document).ready(function(){
+    $(".momo").click(function(){
+      $("*").fadeIn();
+    });
+  });
+  $(document).ready(function(){
+    $(".geee").click(function(){
+      $(".teee").animate({
+      left: '250px',
+      opacity: '0.5',
+      height: '150px',
+      width: '150px'});
+    });
+  });
